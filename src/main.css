@@ -1,5 +1,10 @@
 body {
   text-align: center;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(254, 255, 165) 0%,
+    rgb(255, 232, 182) 90%
+  );
 }
 
 h1 {
@@ -32,7 +37,39 @@ a:hover {
   text-decoration: underline;
 }
 
-button {
+.purpose {
+  line-height: 20px;
+  margin: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 70%;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: white;
+}
+
+.log-in {
+  display: flex;
+  text-align: right;
+  background: white;
+  border: 1px solid white;
+  transition: all 150ms ease-in-out;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.log-in:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.contact-button {
   display: inline;
   margin: 0 auto;
   padding: 5px;
@@ -46,22 +83,11 @@ button {
   font-family: "Times New Roman", Times, serif;
 }
 
-button:hover {
+.contact-button:hover {
   cursor: pointer;
   color: black;
   background: white;
   border: 1px solid white;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 10px;
-  max-width: 80%;
-  border: 1px solid black;
 }
 
 .grid {
@@ -75,16 +101,37 @@ img {
   border-radius: 10px;
 }
 
-.welcome-post {
+.col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  border: 1px solid grey;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
 }
 
-.welcome-post:hover {
+.col:hover {
   filter: contrast(60%);
   transform: scale(1.1);
 }
 
+.post-header {
+  font-size: 40px;
+  text-align: left;
+}
+
+.post-body {
+  font-size: 25px;
+  opacity: 0.7;
+  text-align: left;
+}
+
 #all-posts {
-  
+  text-align: left;
+}
+
+#all-posts:hover {
+  color: grey;
 }
