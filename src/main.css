@@ -74,3 +74,17 @@ img {
 .grid img {
   border-radius: 10px;
 }
+
+.welcome-post {
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.welcome-post:hover {
+  filter: contrast(60%);
+  transform: scale(1.1);
+}
+
+#all-posts {
+  
+}
